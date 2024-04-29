@@ -7,7 +7,6 @@ console.log(three)
 let four = document.getElementsByTagName("button") // HTMLCollection
 console.log(four)
 
-
 let uno = document.querySelector("#btn-uno") // Element
 console.log(uno)
 let dos = document.querySelector(".btn-dos") // Element
@@ -17,3 +16,12 @@ let tres = document.querySelectorAll('[name= "btn-tres"]') // NodeList
 console.log(tres)
 let cuatro = document.querySelectorAll("button") // NodeList
 console.log(cuatro[cuatro.length - 1]) // Element
+
+// querySelector allows to nest or choose multiple selectors as we do in CSS. 
+
+let example = document.querySelector("#btn-example") 
+example.textContent = "Hola mundo" // Reescribe el texto
+
+example.addEventListener("click", function() { // Event listener for click
+    alert("hola")
+})
