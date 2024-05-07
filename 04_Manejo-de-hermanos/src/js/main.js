@@ -1,16 +1,19 @@
 console.log("Manejo de hermanos")
 
+const header = document.querySelector("header")
 const main = document.querySelector("main")
-const btnExample = createBtnInfo()
+const footer = document.querySelector("footer")
 
-// reference.before(element) -> inserts the element before the reference
+// const btnExample = createBtnInfo()
+
+// reference.before(element) -> inserts the element before the reference, equivalent to beforebegin
 // main.before(btnExample) 
 
-// reference.after(element) -> inserts the element after the reference
+// reference.after(element) -> inserts the element after the reference, equivalent to afterend
 // main.after(btnExample)
 
-// reference.prepend(element) -> inserts the element in the 1st position of the reference (a child). Opposite of the appendChild
-// main.prepend(btnExample)
+// reference.prepend(element) -> inserts the element in the 1st position of the reference (a child). Opposite of the appendChild, equivalent to afterbegin
+// main.prepend(btnExample, createBtnInfo()) // receives more than one child
 
 // reference.append(element) -> same as appendChild, but receives more than one child
 // main.append(btnExample, createBtnInfo())
@@ -24,9 +27,6 @@ const btnExample = createBtnInfo()
 // reference.remove() -> remove the reference
 // main.remove()
 
-
-
-
 function createBtnInfo() {
     const btn = document.createElement("button")
     btn.classList.add("btn", "btn-info")
@@ -34,3 +34,21 @@ function createBtnInfo() {
     return btn
 }
 
+// .children -> returns a list with the children
+// console.log(main.children)
+
+// .parentElement -> returns the parent element
+// const btnDark = document.querySelector(".btn-dark")
+// console.log(btnDark.parentElement.parentElement.parentElement) // article -> section -> main
+
+// .firstElementChild -> returns the first child
+// console.log(main.firstElementChild)
+
+// .lastElementChild -> returns the last child
+// console.log(main.lastElementChild)
+
+// .previousElementSibling -> returns the previous sibling
+// console.log(main.previousElementSibling)
+
+//.nextElementSibling -> returns the next sibling
+// console.log(main.nextElementSibling)

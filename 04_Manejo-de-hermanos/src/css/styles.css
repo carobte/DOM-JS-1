@@ -6,7 +6,15 @@
     box-sizing: border-box;
 }
 
+header{
+    height: 50px;
+}
+
 .section{
     width: 100px;
     height: 100px;
+}
+
+footer{
+    height: 80px;
 }
