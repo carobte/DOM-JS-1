@@ -1,0 +1,12 @@
+@import url(./normalize.css);
+
+
+*{
+    box-sizing: border-box;
+}
+
+section{
+    width: 100px;
+    height: 100px;
+    border: 3px red solid;
+}
