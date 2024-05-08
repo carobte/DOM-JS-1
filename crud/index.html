@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +18,30 @@
     <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon">
     <title>Creación Vite</title>
 </head>
+
 <body>
     <header></header>
-    <main>
-        <div class="container py-4 px-3 mx-auto">
-            <h1>Hello, Bootstrap and Vite!</h1>
-            <button class="btn btn-primary">Primary button</button>
-        </div>
+    <main class="container">
+
+        <table class="text-capitalize table  table-success table-striped table-hover">
+            <caption>List of coders</caption>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">name</th>
+                    <th scope="col">last name</th>
+                    <th scope="col">email</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider border-success">
+
+            </tbody>
+        </table>
+
     </main>
     <footer></footer>
 
-<script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
 </body>
+
 </html>
