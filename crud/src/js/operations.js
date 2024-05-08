@@ -1,4 +1,4 @@
-
+/* 
 function withForOf(coders, tbody) {
     for (const coder of coders) {
         tbody.innerHTML += `
@@ -12,18 +12,7 @@ function withForOf(coders, tbody) {
     }
 }
 
-export function withForEach(coders, tbody) {
-    coders.forEach(coder => {
-        tbody.innerHTML += `
-        <tr>
-            <th scope="row">${coder.id}</th>
-            <td>${coder.name}</td>
-            <td>${coder.lastName}</td>
-            <td class="text-lowercase ">${coder.email}</td>
-        </tr>
-        `
-    })
-}
+
 
 function withClasicFor(coders, tbody) {
     for (let i = 0; i < coders.length; i++) {
@@ -49,4 +38,18 @@ function withForIn(coders, tbody) { // el for in devuelve keys en los objetos, e
         </tr>
         `
     }
+}
+ */
+
+export function index(coders, tbody) {
+    coders.forEach(coder => {
+        tbody.innerHTML += `
+        <tr>
+            <th scope="row">${coder.id}</th>
+            <td>${coder.name}</td>
+            <td>${coder.lastName}</td>
+            <td class="text-lowercase ">${coder.email}</td>
+        </tr>
+        `
+    })
 }

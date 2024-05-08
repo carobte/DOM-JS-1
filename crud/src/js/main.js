@@ -5,8 +5,8 @@ import * as bootstrap from 'bootstrap'
 // Import our data from Bootstrap
 import { coders } from '../../public/data/database.js'
 
-import { withForEach } from './operations.js'
+import { index } from './operations.js'
 
 const tbody = document.querySelector('tbody')
 
-withForEach(coders, tbody)
+index(coders, tbody)
