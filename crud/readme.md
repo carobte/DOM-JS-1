@@ -27,17 +27,24 @@ npm create vite@latest
 ## 5. Instalar e importar dependencias necesarios
 
 - npm install
-- Bootstrap
-- Sass
-- SweetAlert2
-- etc.
 
+### Bootstrap:
 
-## Para simular liveServer
+- Bootstrap: npm i --save bootstrap @popperjs/core
 
-- npm run dev
+### Sass:
+- Sass: npm i --save-dev sass
 
-## Compilar versión de distribución
+### SweetAlert2:
+- SweetAlert2: npm install sweetalert2
 
-- npm run build: genera carpeta dis.
+##  Otros comandos:
+
+### Para simular liveServer
+
+- npm run dev (abre en el navegador)
+
+### Compilar versión de distribución
+
+- npm run build (genera carpeta dis.)
 
