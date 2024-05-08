@@ -46,7 +46,7 @@ function withClasicFor() {
     }
 }
 
-function withForIn() { 
+function withForIn() { // el for in devuelve keys en los objetos, en arrays el indice
     for (const iterador in coders) {
         tbody.innerHTML += `
         <tr>
