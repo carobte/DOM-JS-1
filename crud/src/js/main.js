@@ -9,4 +9,23 @@ import { index } from './operations.js'
 
 const tbody = document.querySelector('tbody')
 
-index(coders, tbody)
+const name = document.getElementById("name")
+const lastName = document.getElementById("last-name")
+const email = document.getElementById("email")
+const form = document.querySelector("form")
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const newCoder ={
+        id: Date.now(),
+        name: name.value,
+        lastName: lastName.value,
+        email: email.value
+    }
+
+    coders.push(newCoder)
+    index(coders, tbody)
+
+
+    form.reset()
+})

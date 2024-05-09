@@ -42,6 +42,8 @@ function withForIn(coders, tbody) { // el for in devuelve keys en los objetos, e
  */
 
 export function index(coders, tbody) { // normalmente el método que se encarga de listar en apis se llama index
+    tbody.innerHTML = ""
+    
     coders.forEach(coder => {
         tbody.innerHTML += `
         <tr>
