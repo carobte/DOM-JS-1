@@ -21,9 +21,32 @@
 
 <body>
     <header></header>
-    <main class="container">
+    <main class="container my-3">
+        <!-- Con el método get, se envían los datos a través de la URL, por lo cual no es recomendable. Con el método post también se envían pero no quedan visibles en el URL -->
+        <form action="./index.html" method="get">
+            <legend> Register </legend>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Name(s)" name="name" required>
+                <label for="name">Name(s)</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="last-name" placeholder="Last Name(s)" name="last-name" required>
+                <label for="last-name">Last Name(s)</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="text-center ">
+                <button class="btn btn-outline-success" type="submit">Save</button>
+                <button class="btn btn-outline-danger " type="reset">Cancel</button>
+            </div>
 
-        <table class="text-capitalize table  table-success table-striped table-hover">
+
+        </form>
+        <br>
+
+        <table class="text-capitalize table table-success table-striped table-hover">
             <caption>List of coders</caption>
             <thead>
                 <tr>
