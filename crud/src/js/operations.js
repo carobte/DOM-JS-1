@@ -12,8 +12,6 @@ function withForOf(coders, tbody) {
     }
 }
 
-
-
 function withClasicFor(coders, tbody) {
     for (let i = 0; i < coders.length; i++) {
         tbody.innerHTML += `
@@ -43,7 +41,7 @@ function withForIn(coders, tbody) { // el for in devuelve keys en los objetos, e
 
 export function index(coders, tbody) { // normalmente el método que se encarga de listar en apis se llama index
     tbody.innerHTML = ""
-    
+
     coders.forEach(coder => {
         tbody.innerHTML += `
         <tr>
@@ -54,4 +52,14 @@ export function index(coders, tbody) { // normalmente el método que se encarga 
         </tr>
         `
     })
+}
+
+export function create(name, lastName, email, coders) {
+    const newCoder = {
+        id: Date.now(),
+        name: name.value,
+        lastName: lastName.value,
+        email: email.value
+    }
+    coders.push(newCoder)
 }

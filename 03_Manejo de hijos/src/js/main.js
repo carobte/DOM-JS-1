@@ -3,31 +3,29 @@ console.log("Manejo de hijos en el DOM")
 const main = document.querySelector('main')
 // Los métodos de metodoChild afecta a los hijos directos. Ej Body > main
 
-
-
 const btnExecute = document.querySelector("#btn-execute")
 btnExecute.addEventListener('click', () => {
     // Crear
     // const btnResponse = createButtonSuccess()
 
     // Borrar
-    // const btnForDelete = selectOneButton()
-    // removeBtn(btnForDelete)
+/*     const btnForDelete = selectInfoButton()
+    removeBtn(btnForDelete) */
 
     // Reemplazar
-    /* const newBtn = createButtonSuccess()
+/*     const newBtn = createButtonSuccess()
     const existentBtn = selectInfoButton()
     main.replaceChild(newBtn, existentBtn) */
 
     // insertBefore -> Permite elegir dónde insertar el elemento con otro de referencia.
-
+/* 
     const newBtn = createButtonSuccess()
     const existentBtn = selectInfoButton()
-    main.insertBefore(newBtn, existentBtn)
+    main.insertBefore(newBtn, existentBtn) */
 })
 
 function createButtonSuccess() {
-    const button = document.createElement('button')
+    const button = document.createElement('button') 
     button.setAttribute("type", "button")
     // button.type = "button" // -> Hace lo mismo que la línea de arriba
     button.classList.add("btn", "btn-success") // -> Recibe varios parametros para varias clases
