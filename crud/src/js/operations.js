@@ -112,3 +112,7 @@ export function deleteCoder(coders, id) {
         }
     })
 }
+
+export function editCoder(coders, id){           
+
+}

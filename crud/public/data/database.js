@@ -19,7 +19,7 @@ export let coders = [
         lastName: "bte",
         email: "caro@example.com"
     }
-    /* ,
+    ,
     {
         id: 4,
         name: 'diego',
@@ -61,7 +61,7 @@ export let coders = [
         name: "Santiago",
         lastName: "Pineda",
         email: "santiagopt97@gmail.com"
-    },
+    }/* ,
     {
         id: 11,
         name: "daniela",
